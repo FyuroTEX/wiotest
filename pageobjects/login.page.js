@@ -9,12 +9,12 @@
     get submitButton () { return $('.auth-modal__login-button') }
     get loginButton () { return $('*=войдите в личный кабинет') }
     get logIn () { return $('.header-topline__user-link') }
-
+    get loginError () {return $('#auth_email.form_state_error')}
     /**
      * define or overwrite page methods
      */
     open () {
-        browser.open('https://rozetka.com.ua/')
+        browser.url('https://rozetka.com.ua/')
     }
 
     submit () {
@@ -25,4 +25,4 @@
     }
 };
 
-module.exports = new LoginPage()
+module.exports = new LoginPage();
