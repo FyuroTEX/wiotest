@@ -1,5 +1,3 @@
-// import assert from 'assert';
-// import LoginPage from '../pageobjects/login.page';
 const LoginPage = require('../pageobjects/login.page');
 const assert = require('assert');
 
