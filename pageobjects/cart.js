@@ -4,7 +4,7 @@ class Cart {
     get submitButton() { return $('.auth-f-btn') };
     get submitBuyButton() { return $("[type=submit]") };
     get closeModalButton() { return $(".rz-popup-close-icon") };
-    get cartCount() { return $('.header-actions__button-counter') };
+    get cartCount() { return $('body > app-root > rz-main-app > rz-header > div > header > div > div.header-bottomline > rz-header-user-buttons > ul > li.header-actions__item.header-actions__item_type_cart > rz-user-buttons-cart > div > a > span.header-actions__button-counter.ng-star-inserted') };
     get loginButton() { return $('*=войдите в личный кабинет') };
     get logIn() { return $('.header-topline__user-link') };
     

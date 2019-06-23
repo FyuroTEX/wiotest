@@ -25,4 +25,14 @@ describe('Cart', () => {
       let emptyCartText = Cart.emptyCart;
     assert.equal(emptyCartText.getText(), 'Корзина пуста');
   });
+  it('Delete from cart', () => {
+      Cart.openCart();
+      https://hard.rozetka.com.ua/kingston_suv500_240g/p40090208/
+      https://hard.rozetka.com.ua/kingston_kc_s44240_6f/p70512518/
+      Cart.delete();
+      Cart.deleteSubmit();
+      browser.pause(2000);
+      let emptyCartText = Cart.emptyCart;
+    assert.equal(emptyCartText.getText(), 'Корзина пуста');
+  });
 });
