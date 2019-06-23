@@ -17,7 +17,7 @@ describe('Auth form', () => {
     LoginPage.username.addValue('ko3tniw@cryptonet.top');
     LoginPage.password.addValue('ERdfcv1234');
     LoginPage.submit();
-    browser.pause(2000);
+    browser.pause(3000);
     let loginSucces = LoginPage.logIn;
     assert.equal(loginSucces.getText(), 'LtngRest');
   });
