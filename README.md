@@ -1,2 +1,2 @@
-Open project, in terminal "npm i"
-To run test "npm test"
+1. Open project, in terminal "npm i"
+2. To run test "npm test"
