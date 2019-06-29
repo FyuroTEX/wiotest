@@ -23,8 +23,9 @@ exports.config = {
 
 
     specs: [
-        './specs/*.specs.js'
-        // './test/specs/**/*.js'
+        // './specs/*.specs.js'
+        './specs/cart.specs.js'
+       
     ],
     // suites: {
     //     test: [
@@ -69,13 +70,20 @@ exports.config = {
         // to run chrome headless the following flags are required
         // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
         // args: ['--headless', '--disable-gpu'],
-        }
-     
+        },
+        "timeouts": {
+            
+            "implicit" : 5000,
+          }
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     }],
+    "timeouts": {
+            
+        "implicit" : 5000,
+      },
     //
     // ===================
     // Test Configurations
@@ -107,6 +115,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
+    
     baseUrl: 'http://localhost:9515',
     //
     // Default timeout for all waitFor* commands.
