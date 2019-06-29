@@ -32,10 +32,10 @@ class Cart {
   dellAllProd() {
     this.dellAll.map(del => {
       del.click();
-      let dellSubButt = this.delSubmit.waitForDisplayed(3000);
-    //   this.deleteSubmit();
-    //   browser.pause(1000);
-    this.delSubmit.click();
+    //   let dellSubButt = this.delSubmit.waitForDisplayed(3000);
+      this.deleteSubmit();
+      browser.pause(1500);
+    // dellSubButt.click();
     });
   }
   // emptyCartText() {
